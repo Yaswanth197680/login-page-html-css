@@ -1,0 +1,523 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   BODY
+===================================== */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            #667eea,
+            #764ba2
+        );
+
+}
+
+
+/* =====================================
+   BACKGROUND SHAPES
+===================================== */
+
+.shape {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+}
+
+
+/* First Shape */
+
+.shape-one {
+
+    width: 350px;
+
+    height: 350px;
+
+    top: -150px;
+
+    left: -120px;
+
+}
+
+
+/* Second Shape */
+
+.shape-two {
+
+    width: 300px;
+
+    height: 300px;
+
+    bottom: -130px;
+
+    right: -100px;
+
+}
+
+
+/* =====================================
+   LOGIN CONTAINER
+===================================== */
+
+.login-container {
+
+    width: 100%;
+
+    max-width: 430px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* =====================================
+   LOGIN BOX
+===================================== */
+
+.login-box {
+
+    padding: 45px 40px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255, 255, 255, 0.15);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.3);
+
+    box-shadow:
+        0 25px 60px
+        rgba(0, 0, 0, 0.25);
+
+    color: white;
+
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.logo {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin:
+        0 auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #6a4bc3;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* =====================================
+   HEADING
+===================================== */
+
+.login-box h1 {
+
+    text-align: center;
+
+    font-size: 34px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =====================================
+   SUBTITLE
+===================================== */
+
+.subtitle {
+
+    text-align: center;
+
+    color:
+        rgba(255, 255, 255, 0.8);
+
+    font-size: 15px;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =====================================
+   INPUT GROUP
+===================================== */
+
+.input-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+/* =====================================
+   LABEL
+===================================== */
+
+.input-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+/* =====================================
+   INPUT
+===================================== */
+
+.input-group input {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border-radius: 12px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.4);
+
+    outline: none;
+
+    background:
+        rgba(255, 255, 255, 0.15);
+
+    color: white;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+}
+
+
+/* =====================================
+   PLACEHOLDER
+===================================== */
+
+.input-group input::placeholder {
+
+    color:
+        rgba(255, 255, 255, 0.7);
+
+}
+
+
+/* =====================================
+   INPUT FOCUS
+===================================== */
+
+.input-group input:focus {
+
+    background:
+        rgba(255, 255, 255, 0.25);
+
+    border-color: white;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(255, 255, 255, 0.12);
+
+}
+
+
+/* =====================================
+   OPTIONS
+===================================== */
+
+.options {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin:
+        5px 0 25px;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================
+   REMEMBER ME
+===================================== */
+
+.remember {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    cursor: pointer;
+
+}
+
+
+.remember input {
+
+    accent-color: white;
+
+}
+
+
+/* =====================================
+   LINKS
+===================================== */
+
+.options a,
+.signup a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+
+/* Link Hover */
+
+.options a:hover,
+.signup a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =====================================
+   LOGIN BUTTON
+===================================== */
+
+.login-btn {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: white;
+
+    color: #6a4bc3;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s,
+        background 0.3s;
+
+}
+
+
+/* =====================================
+   LOGIN BUTTON HOVER
+===================================== */
+
+.login-btn:hover {
+
+    transform:
+        translateY(-3px);
+
+    background: #f1f1f1;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* =====================================
+   LOGIN BUTTON CLICK
+===================================== */
+
+.login-btn:active {
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =====================================
+   SIGN UP
+===================================== */
+
+.signup {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    color:
+        rgba(255, 255, 255, 0.8);
+
+}
+
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 480px) {
+
+    body {
+
+        padding: 15px;
+
+    }
+
+
+    .login-box {
+
+        padding:
+            35px 25px;
+
+        border-radius: 20px;
+
+    }
+
+
+    .login-box h1 {
+
+        font-size: 28px;
+
+    }
+
+
+    .subtitle {
+
+        font-size: 14px;
+
+        margin-bottom: 28px;
+
+    }
+
+
+    .options {
+
+        font-size: 13px;
+
+    }
+
+
+    .input-group input {
+
+        padding: 13px;
+
+    }
+
+
+    .login-btn {
+
+        padding: 13px;
+
+    }
+
+
+    .shape-one {
+
+        width: 250px;
+
+        height: 250px;
+
+    }
+
+
+    .shape-two {
+
+        width: 200px;
+
+        height: 200px;
+
+    }
+
+}
