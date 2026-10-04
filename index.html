@@ -1,80 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Login Page</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+          <title>Nexora | Sign In</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <div class="login-container">
+    <div class="page">
 
-        <div class="login-box">
+        <div class="login-card">
 
-            <h1>Welcome to MySpace</h1>
 
-            <p class="subtitle">
-                Login to continue to your account
-            </p>
+            <!-- =========================
+                 LEFT SIDE
+            ========================== -->
 
-            <form>
+            <div class="left-panel">
 
-                <!-- Email -->
-                <div class="input-group">
-                    <label for="email">Username / Email</label>
+                <div class="brand">
 
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Enter your email"
-                        required
-                    >
-                </div>
+                    <div class="brand-icon">
+                        ◈
+                    </div>
 
-                <!-- Password -->
-                <div class="input-group">
-                    <label for="password">Password</label>
-
-                    <input
-                        type="password"
-                        id="password"
-                        placeholder="Enter your password"
-                        required
-                    >
-                </div>
-
-                <!-- Remember Me / Forgot Password -->
-                <div class="options">
-
-                    <label class="remember">
-                        <input type="checkbox">
-                        <span>Remember Me</span>
-                    </label>
-
-                    <a href="#">Forgot Password?</a>
+                    <span>Nexora</span>
 
                 </div>
 
-                <!-- Login Button -->
-                <button type="submit" class="login-btn">
-                    Login
-                </button>
 
-                <!-- Sign Up -->
-                <p class="signup">
-                    Don't have an account?
-                    <a href="#">Create Account</a>
-                </p>
+                <div class="left-content">
 
-            </form>
+                    <h1>
+                        Everything you<br>
+                        need, in one place.
+                    </h1>
+                    
+                    <p>
+                        Sign in to access Nexora, manage your account
+                        and continue where you left off.
+                    </p>
+
+                </div>
+
+
+                <div class="secure">
+
+                    <span class="shield">◆</span>
+
+                    <span>
+                        Secure &amp; private
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 RIGHT SIDE
+            ========================== -->
+
+            <div class="right-panel">
+
+                <div class="form-container">
+
+                    <h2>
+                        Welcome back
+                    </h2>
+
+                    <p class="description">
+                        Please enter your details to sign in.
+                    </p>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email address
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                ✉
+                            </span>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="you@example.com"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span class="input-icon">
+                                🔒
+                            </span>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- REMEMBER + FORGOT -->
+
+                    <div class="options">
+
+                        <label class="remember">
+
+                            <input type="checkbox">
+
+                            <span>
+                                Remember me
+                            </span>
+
+                        </label>
+
+
+                        <a href="#">
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+
+                    <!-- SIGN IN BUTTON -->
+
+                    <button class="signin-btn">
+
+                        <span>
+                            Sign in
+                        </span>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <!-- DIVIDER -->
+
+                    <div class="divider">
+
+                        <span></span>
+
+                        <p>
+                            New here?
+                        </p>
+
+                        <span></span>
+
+                    </div>
+
+
+                    <!-- CREATE ACCOUNT -->
+
+                    <p class="create-account">
+
+                        Don't have an account?
+
+                        <a href="#">
+                            Create an account
+                        </a>
+
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
     </div>
 
 </body>
+
 </html>
